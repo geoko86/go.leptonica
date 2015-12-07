@@ -1,8 +1,9 @@
 package leptonica
 
 /*
-#cgo LDFLAGS: -llept
-#include "leptonica/allheaders.h"
+#cgo darwin LDFLAGS: -llept
+#cgo windows LDFLAGS: /opt/leptonice/src/liblept.dll
+#include "/opt/leptonica/src/allheaders.h"
 #include <stdlib.h>
 
 l_uint8* uglycast(void* value) { return (l_uint8*)value; }
